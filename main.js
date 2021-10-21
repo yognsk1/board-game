@@ -63,7 +63,25 @@ function diceFaceImages(val, blur) {
 
 /***************************DICE CODE END*****************************/
 
+function loadLanguages() {
+  try {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        includedLanguages: "en,hi",
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: true,
+      },
+      "google_translate_element"
+    );
+  } catch (e) {
+    alert(e);
+  }
+}
+
 function startGame() {
+  loadLanguages();
+
   var table = $(".table")[0];
   var body = "";
 
