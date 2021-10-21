@@ -101,3 +101,12 @@ input[type="button"] {
 #google_translate_element {
   text-align: right;
 }
+
+@media only screen and (max-width: 600px) {
+  .board-game {
+    display: block;
+  }
+  .main {
+    margin-top: 20px;
+  }
+}
