@@ -94,3 +94,10 @@ input[type="button"] {
 .arrow-cls.down {
   transform: rotate(90deg);
 }
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+#google_translate_element {
+  text-align: right;
+}
