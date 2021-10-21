@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+.board-game {
+  height: 100vh;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+table {
+  margin: 0 auto;
+  border: solid 1px #928a8a;
+  border-collapse: collapse;
+}
+table td {
+  width: 65px;
+  height: 65px;
+  border: solid 1px #928a8a;
+  text-align: center;
+}
+table .home-cell {
+  background: #eee;
+}
+
+#board,
+.main {
+  flex: 1;
+}
+
+.p-span {
+  margin: 3px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 8px;
+}
+#dice {
+  height: 147px;
+  width: 147px;
+  margin: 0 auto;
+  border: solid 1px #000;
+  border-radius: 23px;
+  background: url(./diceImage.jpg) no-repeat;
+  background-position: 113px -31px;
+  cursor: pointer;
+}
+.dice-blk {
+  padding: 22px;
+}
+.footer {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.waitTestDiv {
+  text-align: center;
+  margin-top: 13px;
+  display: none;
+}
+
+#faceDice {
+  font-size: 20px;
+  color: red;
+}
+
+.main .player-info-blk {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+.arrow-cls {
+  background: url(./arrow.ico) no-repeat;
+  background-position: center;
+  background-size: 32px;
+  opacity: 0.2;
+}
+
+.arrow-cls.top {
+  transform: rotate(270deg);
+}
+.arrow-cls.left {
+  transform: rotate(180deg);
+}
+.arrow-cls.right {
+  transform: rotate(360deg);
+}
+.arrow-cls.down {
+  transform: rotate(90deg);
+}
